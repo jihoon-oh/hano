@@ -1,2 +1,2 @@
-Welcome to the repository for my band, Hano!
-The url is http://www.dbranches.com
+Welcome to the repository for my band's website, Hano!
+The url is http://hanomusic.com

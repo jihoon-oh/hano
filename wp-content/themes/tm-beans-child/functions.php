@@ -20,12 +20,13 @@ add_action( 'wp_enqueue_scripts', 'beans_child_enqueue_assets' );
 
 function beans_child_enqueue_assets() {
 
-	//wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
+	// Individual CSS for each page, if need be. Add "@import 'style.css'" to them
 	if ( is_page( 'home' ) ) {
 		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/home.css' );
 	}
 	else wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
 
+	// https://digitalfellows.commons.gc.cuny.edu/2013/11/18/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/
 	wp_register_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
 
 	wp_register_style( 'bootstrap-css', get_stylesheet_directory_uri() . '/bootstrap/css/bootstrap.min.css', array(), '3.0.1', 'all' );
@@ -35,3 +36,6 @@ function beans_child_enqueue_assets() {
 	wp_enqueue_style( 'bootstrap-css' );
 
 }
+
+// "This line will prevent WordPress from automatically inserting HTML line breaks in your posts. If you don’t do this, some of the Bootstrap snippets that we are going to add will probably not display correctly."
+remove_filter('the_content', 'wpautop');

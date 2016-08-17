@@ -7,9 +7,20 @@ beans_load_document();
 */
 ?>
 
+<div class="wrapper"> 
+	<section class="panel" id="panel-1">
+		<div id="section-text">
+			<h1 id="welcome">Welcome</h1>
+			<p>We are grateful that you decided to check us out. </br>You won't regret this.</p>
+		</div>
+	</section>
+	<section class="panel" id="panel-2">
 
-<img src="/wp-content/themes/tm-beans-child/imgs/fullband.jpg" alt="first background" class="background">
+	</section>
+	<section class="panel" id="panel-3">
 
+	</section>
+</div>
 
 <!-- <div class="container">
     <div class="row">

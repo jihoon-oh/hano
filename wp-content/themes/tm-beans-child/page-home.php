@@ -10,12 +10,16 @@ beans_load_document();
 <div class="wrapper"> 
 	<section class="panel" id="panel-1">
 		<div id="section-text">
-			<h1 id="welcome">Welcome</h1>
-			<p>We are grateful that you decided to check us out. </br>You won't regret this.</p>
+			<h1 id="welcome">Hano</h1>
+      <hr/ id="below-welcome">
+			<p>We write and play music from the Asian-American perspective.</p>
 		</div>
 	</section>
 	<section class="panel" id="panel-2">
-
+      <!-- <h1 id="community">COMMUNITY</h1>
+      <p>Hano is also looking to build a community of Asian-Americans artists, musicians, and dancers. 
+      Interested? Contact us!
+      </p> -->
 	</section>
 	<section class="panel" id="panel-3">
 

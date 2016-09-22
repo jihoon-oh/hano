@@ -21,8 +21,10 @@ add_action( 'wp_enqueue_scripts', 'beans_child_enqueue_assets' );
 function beans_child_enqueue_assets() {
 
 	// Individual CSS for each page, if need be. Add "@import 'style.css'" to them
-	if ( is_page( 'home' ) ) {
+	if ( is_page( 'home' )) {
 		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/home.css' );
+	} else if( is_page( 'about' )) {
+		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/about.css' );
 	}
 	else wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
 
@@ -35,7 +37,16 @@ function beans_child_enqueue_assets() {
 
 	wp_enqueue_style( 'bootstrap-css' );
 
+
 }
 
 // "This line will prevent WordPress from automatically inserting HTML line breaks in your posts. If you don’t do this, some of the Bootstrap snippets that we are going to add will probably not display correctly."
 remove_filter('the_content', 'wpautop');
+
+// Add meta tag from bootstrap
+add_action('wp_head', 'bootstrap_meta');
+
+function bootstrap_meta() {
+	$metatag = '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">';
+	echo $metatag;
+}

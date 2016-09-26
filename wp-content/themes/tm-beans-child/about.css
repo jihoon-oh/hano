@@ -1,1 +1,20 @@
 @import 'style.css';
+
+.col-xs-12 {
+	padding: 0;
+}
+
+.col-sm-3 {
+	padding: 0;
+}
+
+hr {
+	margin: 30px 0 30px 50%;
+    width: 110%;
+    border-color: #777;
+    transform: translateX(-50%);
+}
+
+.name {
+	margin-top: 0;
+}

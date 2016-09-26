@@ -11,7 +11,7 @@ beans_load_document();
 	<section class="panel" id="panel-1">
 		<div id="section-text">
 			<h1 id="welcome">Hano</h1>
-      <hr/ id="below-welcome">
+      <hr id="below-welcome"/>
 			<p>We write and play music from the Asian-American perspective.</p>
 		</div>
 	</section>

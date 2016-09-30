@@ -1,5 +1,9 @@
 @import 'style.css';
 
+.row {
+	margin-left: 0;
+}
+
 .col-xs-12 {
 	padding: 0;
 }
@@ -17,4 +21,8 @@ hr {
 
 .name {
 	margin-top: 0;
+}
+
+.bio-pic {
+	margin-right: 20px;
 }

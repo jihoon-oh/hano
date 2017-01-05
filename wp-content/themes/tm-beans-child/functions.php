@@ -35,7 +35,7 @@ function beans_child_enqueue_assets() {
 		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/about.css' );
 	} else wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
 
-
+	wp_enqueue_script('script', get_stylesheet_directory_uri() . '/js/script.js', array('jquery') );
 }
 
 // "This line will prevent WordPress from automatically inserting HTML line breaks in your posts. If you don’t do this, some of the Bootstrap snippets that we are going to add will probably not display correctly."
